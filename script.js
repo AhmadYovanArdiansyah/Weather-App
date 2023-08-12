@@ -1,7 +1,7 @@
 class GeolocationService {
     constructor(apiKey) {
         this.apiKey = apiKey;
-        this.geoApiBaseUrl = 'http://api.openweathermap.org/geo/1.0';
+        this.geoApiBaseUrl = 'https://api.openweathermap.org/geo/1.0';
     }
 
     async fetchData(url) {
