@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <main>
+        <div class="searchBar">
+            <input type="text" id="locationInput" placeholder="Masukkan nama lokasi">
+            <button id="searchButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"> <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/> </svg>
+            </button>
+        </div>
+        <div class="weather-info">
+            <div style="font-size: 20px;" id="locationName"></div>
+            <div style="height: 100%; display: flex; flex-direction: column; align-items: center;">
+                <div style="flex: 1; width: 100%; position: relative;">
+                    <div class="weather-icon">
+                        
+                    </div>
+                    <p style="font-size: 20px;" id="description"></p>
+                </div>
+                <div style="height: fit-content; width: 100%; display: flex; gap: 1rem; justify-content: center;">
+                    <p ><span style="font-size: 30px;" id="temperature"></span> Celcius</p>
+                    <p ><span style="font-size: 30px;" id="humidity"></span> Humidity</p>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
